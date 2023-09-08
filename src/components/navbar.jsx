@@ -5,10 +5,6 @@ import Logo1 from "../assets/Logo-01.svg"
 
 const menuData = [
   {
-      path: '/',
-      name: 'Home'
-  },
-  {
       path:'/about',
       name: 'About'
   },
@@ -19,7 +15,11 @@ const menuData = [
   {
       path:'/book',
       name: 'Book'
-  }
+  },
+  {
+    path: '/contact',
+    name: 'Contact'
+},
 ]
 
 export default function AppNavbar() {

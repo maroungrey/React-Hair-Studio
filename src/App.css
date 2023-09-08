@@ -1,5 +1,10 @@
 body {
   font-family: 'Josefin Sans', sans-serif !important;
+  background-color: #fcfcfc;
+  color: #505050;
+}
+a {
+  color: #505050;
 }
 
 .dancing-script {
@@ -7,6 +12,25 @@ body {
   font-size: 5em;
   line-height: 60px;
 }
+.center-vertically {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.theme-color {
+  background-color: #e5d9cc;
+}
+.footer-links a {
+  text-decoration: none;
+}
+.list_item {
+  color: #505050
+}
+
+
+
+
 @media only screen and (max-width: 991px) {
   .col-lg-4.col-12 {
     padding: 1% 3%;
