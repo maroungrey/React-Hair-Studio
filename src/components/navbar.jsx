@@ -42,7 +42,7 @@ export default function AppNavbar() {
             {
                 menuData.map((item)=>(
                     <NavLink href={item.path} key={item.name}>
-                        <div className="list_item">{item.name}</div>
+                        <div className="list_item fh-link">{item.name}</div>
                     </NavLink>
                 ))
             }        

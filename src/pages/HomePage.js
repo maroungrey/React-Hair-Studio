@@ -4,9 +4,10 @@ import AppFooter from '../components/footer';
 import { Container, Row, Col } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import Hero from "../assets/Hero.jpg"
+import Hero from "../assets/banner-1.jpg"
 import DescriptionImg from '../assets/desc2.jpg'
 import WorkHoursImg from '../assets/work-hours.png'
+
 
 
 const galleryData = [
@@ -24,29 +25,35 @@ const galleryData = [
     },
 ]
 
-
 export default function HomePage() {
   return (
     <div>
-        <AppNavbar />
-        <section className='hero-block'>         
+        <header>
+            <AppNavbar />
+        </header>
+
+        
+        <section className='hero-block'> 
+            {/* <div className='p-5 text-center bg-image hero-image'>
+            </div>         */}
             <img
                 className="d-block w-100"
                 src={Hero}
                 alt='Hero Image'
             />
         </section>
+
         <Container>
             {/* Quote */}
-            <div className='my-5'>
+            <div className='mt-5'>
                 <Row>
                     <Col>
                         <div className='mx-auto my-5 text-center'>
                             <h1 className='dancing-script'>Your hair, our canvas</h1>
                             <br></br>
                             <div className="w-75 mx-auto">
-                                <p>Hair Studio offers a full range of custom hair services.</p>
-                                <p>Our professionally trained staff have decades of combined experience and the team of stylists and supporting staff were meticulously selected by the Director stylist Maroun Grey</p>
+                                <p>At Hair Studio, we provide an extensive selection of personalized hair services.</p>
+                                <p>Our dedicated team, boasting decades of collective expertise, was carefully handpicked by Maroun Grey, our Director Stylist.</p>
                             </div>
                         </div>
                     </Col>
@@ -63,31 +70,33 @@ export default function HomePage() {
                 </Row>
             </div>
 
+
+
             {/* Description */}
-            <Row className='my-5'>
- 
+            <Row className=''>
                 <Col lg={6}>
-                    <div className='mx-auto mt-3 px-4 text-center text-lg-left '>
+                    <div className='mx-auto py-5 px-4 text-center text-lg-left '>
                         <h1>Los Marounes Hair Salon</h1>
-                        <p>Professional highly trained and skilled hair stylists to glam you up for every special occasion.
-                            Find out why Hair Salon by Maroun is the highest-rated hair salon on Yelp and Google!
-                            Hair Salon by Maroun is a hair salon located in Los Marounes in the heart of Marountown. Specialties include but are not limited to: balayage, digital setting perms, refresh perms, magic straight perms, root touch up, the latest styles of haircuts for women and men, and hair treatments such as keratin and Mucota. Staffed by artistic stylists who have mastered their craft, Hair Salon by Maroun is arguably one of the best hair salons in all of California. We have built strong relationships with our clients throughout the years; many of whom are Korean and American celebrities and social media influencers! We follow strict COVID-19 Protection & Health Guidelines in order to protect both clients and staff.</p>
+                        <p>Our team of highly trained and exceptionally skilled hairstylists is here to enhance your beauty for any special occasion. Discover why Hair Salon by Maroun holds the top ratings on Yelp and Google!</p>
+                        <p>Hair Salon by Maroun is situated in the heart of Marountown, right in Los Marounes. Our specialties encompass a wide range of services, including but not limited to balayage, digital setting perms, refreshing perms, magical straight perms, root touch-ups, the latest trends in haircuts for both women and men, and luxurious hair treatments such as keratin and Mucota. Our salon is staffed by artistic stylists who have honed their craft to perfection, making Hair Salon by Maroun arguably one of California's finest hair salons.</p>
                     </div>
                 </Col>
-
                 <Col lg={6}>
                     <div className='center-vertically'>
                         <Image src={DescriptionImg} fluid/>
                     </div>
                 </Col>
-
             </Row>
+
+
+
         </Container>
+
         {/* Working hours */}
-        <div className='my-5 py-5 theme-color'>
+        <section className='my-5 py-5 theme-color'>
         <Container>
-        <Row>
-            <Col lg={6}>
+            <Row>
+                <Col lg={6}>
                     <div className='px-3 center-vertically'>
                         <Image src={WorkHoursImg} fluid/>
                     </div>
@@ -98,14 +107,17 @@ export default function HomePage() {
                         <p>Open 7 days a week. Walk-Ins are welcomed.</p>
                         <p>Tuesday – Saturday …………….. 10AM – 7PM</p>
                         <p>Sunday – Monday …………………. 10AM – 6PM</p>
-                        <Button variant="dark">Book Appointment</Button>
+                        <a href="/book">
+                            <Button variant="dark">Book Appointment</Button>
+                        </a>
                     </div> 
                 </Col>
-
-                </Row>
+            </Row>
         </Container>
-            </div>
-        <AppFooter />
+            </section>
+            <footer>
+                <AppFooter />
+            </footer>
     </div>
   )
 }

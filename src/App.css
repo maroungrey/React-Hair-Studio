@@ -27,8 +27,38 @@ a {
 .list_item {
   color: #505050
 }
+.line{
+  border-bottom: #e5dac9 solid 1px;
+  height: 16px;
+}
+/* .hero-image {
+  background-image: url("./assets/banner-1.jpg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+} */
 
-
+/* FOOTER & HEADER ANIMATION */
+.fh-link::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background-color: #505050;
+  display: block;
+  transition: .1s ease-in-out;
+}
+.fh-link:hover::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #505050;
+  display: block;
+  }
 
 
 @media only screen and (max-width: 991px) {

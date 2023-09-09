@@ -9,7 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import BookPage from "./pages/BookPage";
 import ContactPage from "./pages/ContactPage";
-// import NoPage from "./pages/NoPage";
+import NoPage from "./pages/NoPage";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactPage />
+  },
+  {
+    path: "/*",
+    element: <NoPage />
   }
 ])
 

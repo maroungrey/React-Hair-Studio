@@ -16,10 +16,10 @@ export default function AppFooter() {
             />
             </div>
             <Row className="py-2 footer-links">
-              <Col><a href='/about'>About</a></Col>
-              <Col><a href='/about'>Services</a></Col>
-              <Col><a href='/about'>Book</a></Col>
-              <Col><a href='/about'>Contact</a></Col>
+              <Col><a href='/about'><div className="fh-link">About</div></a></Col>
+              <Col><a href='/services'><div className="fh-link">Services</div></a></Col>
+              <Col><a href='/book'><div className="fh-link">Book</div></a></Col>
+              <Col><a href='/contact'><div className="fh-link">Contact</div></a></Col>
             </Row>
             <Row className="py-2">
               <Col className="m-1"><a href='#'><i class="fa-brands fa-facebook-f"></i></a></Col>
