@@ -2,14 +2,13 @@ import React from 'react'
 import AppNavbar from '../components/navbar';
 import AppFooter from '../components/footer';
 import { Container, Row, Col } from 'react-bootstrap'
-import Banner from "../assets/banner-3.jpg"
+import Banner from "../assets/banner-3.webp"
 
 export default function About() {
   return (
     <div>
-        <header className="App-header">
             <AppNavbar />
-        </header>
+
 
         <section className='hero-block'> 
             {/* <div className='p-5 text-center bg-image hero-image'>

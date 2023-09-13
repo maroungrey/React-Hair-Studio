@@ -2,11 +2,15 @@ body {
   font-family: 'Josefin Sans', sans-serif !important;
   background-color: #fcfcfc;
   color: #505050;
+  margin-top: 185px;
 }
 a {
   color: #505050;
 }
-
+#header-wrapper {
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 3px #ccc;
+}
 .dancing-script {
   font-family: 'Dancing Script', cursive;
   font-size: 5em;
@@ -31,17 +35,6 @@ a {
   border-bottom: #e5dac9 solid 1px;
   height: 16px;
 }
-/* .hero-image {
-  background-image: url("./assets/banner-1.jpg");
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-} */
 
 /* FOOTER & HEADER ANIMATION */
 .fh-link::after {
@@ -71,3 +64,4 @@ a {
     text-align: left !important;
   }
 }
+

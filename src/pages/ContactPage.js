@@ -1,11 +1,9 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import Image from 'react-bootstrap/Image';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import { Container, Row, Col, Button, Form, Image } from 'react-bootstrap'
+
 import AppNavbar from '../components/navbar';
 import AppFooter from '../components/footer';
-import MapImg from '../assets/map.jpg'
+import MapImg from '../assets/map.webp'
 
 export default function ContactPage() {
   return (

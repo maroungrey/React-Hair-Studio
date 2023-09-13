@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import FooterImg from "../assets/footer-img.png"
+import FooterImg from "../assets/footer-img.webp"
 import Image from 'react-bootstrap/Image';
 
 export default function AppFooter() {
   return (
-    <div>
+    <footer>
         <Container className="d-flex flex-column align-items-center">
             <div>
             <Image
@@ -25,8 +25,8 @@ export default function AppFooter() {
               <Col className="m-1"><a href='#'><i class="fa-brands fa-facebook-f"></i></a></Col>
               <Col className="m-1"><a href='#'><i class="fa-brands fa-instagram"></i></a></Col>
             </Row>
-            <Row>© {new Date().getFullYear()} HairStudio. All rights reserved.</Row>
+            <Row>© {new Date().getFullYear()} MarounGrey. All rights reserved.</Row>
         </Container>
-    </div>
+    </footer>
   )
 }

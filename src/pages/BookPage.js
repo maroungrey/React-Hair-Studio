@@ -1,11 +1,9 @@
 import React from 'react'
 import { useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap'
-import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
 import AppNavbar from '../components/navbar';
 import AppFooter from '../components/footer';
-import DescriptionImg from '../assets/desc1.jpg'
+import DescriptionImg from '../assets/desc1.webp'
 import Cal, { getCalApi } from "@calcom/embed-react";
 
 export default function BookPage() {
